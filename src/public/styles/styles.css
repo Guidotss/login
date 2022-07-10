@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 25px;
+  background-color: #22223b;
+  padding: 10px;
+  color: #f2e9e4;
+}
+
+header p {
+  margin-top: 15px;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  margin: 5px;
+  display: inline-block;
+  padding: 10px;
+  border: solid;
+  border-radius: 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #f2e9e4;
+  padding: 10px;
+}
+
+li:hover {
+  border-color: orange;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 200px;
+  -webkit-box-shadow: 10px 10px 10px 10px grey;
+          box-shadow: 10px 10px 10px 10px grey;
+}
+
+.card .card-body {
+  text-align: center;
+  width: 50%;
+}
+
+.card .card-body h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.card .card-body input {
+  margin: 10px;
+}
+
+.card .card-body button {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=styles.css.map */
