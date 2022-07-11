@@ -16,7 +16,7 @@ passport.use('registro',new localStrategy({
         const newUser = new User(); 
         newUser.nombre = req.body.nombre;
         newUser.email = email;
-        newUser.password = password;
+        newUser.password = newUser.encryptPassword(password);
         await newUser.save();
         done(null,newUser); 
     
@@ -28,8 +28,9 @@ passport.use('login',new localStrategy({
     passwordField:'password',
     passReqToCallback:true
 },async function(req,email,password,done){
+    const currentUser = new User();
     const user = await User.findOne({email});
-    if(!user || user.password !== password){
+    if(!user || !currentUser.comparePassword(password,user.password)){
         return done(null,false);
     }else{
         done(null,user);

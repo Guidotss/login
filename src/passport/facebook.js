@@ -9,7 +9,7 @@ const facebookStrategy = Strategy;
 passport.use(new facebookStrategy({
     clientID:`${process.env.facebook_clientID}`,
     clientSecret:`${process.env.facebook_clientSecret}`,
-    callbackURL:'http://localhost:8080/login/auth/facebook',
+    callbackURL:'http://localhost:8080/login/auth1/facebook',
 },async function(accessToken,refreshToken,profile,done){
     const user = await Users.findOne({facebookId:profile.id});
     if(user){
