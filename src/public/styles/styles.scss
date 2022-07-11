@@ -14,35 +14,29 @@ header{
     justify-content: space-between;
    font-size: 25px;
    background-color: #22223b;
-   padding: 10px;
+   padding: 15px;
    color:#f2e9e4;
     p{
-        margin-top: 15px;
+        padding: 10px;
     }
-
-   ul{
-    list-style: none;
-        li{
-            margin: 5px;   
-            display: inline-block;
+        
+    div{
+        margin-top: 8px;
+        a{
+            text-decoration: none;
+            color: #f2e9e4;
+            border: 2px solid black;
             padding: 10px;
-            border: solid;
             border-radius: 10px;
-            
-
-                a{
-                    text-decoration: none;
-                    color:#f2e9e4;
-                    padding: 10px;
-                }
+        } 
+        a:hover{
+            border-color: orange;
+            transition: 0.5s;
         }
-   }
+    }
 }
 
-li:hover{
-    border-color: orange;
-    transition: 0.5s;
-}
+
 
 
 .card{

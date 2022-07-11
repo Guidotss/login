@@ -27,7 +27,7 @@ passport.use('login',new localStrategy({
     usernameField: 'email',
     passwordField:'password',
     passReqToCallback:true
-},async function(nombre,email,password,done){
+},async function(req,email,password,done){
     const user = await User.findOne({email});
     if(!user || user.password !== password){
         return done(null,false);

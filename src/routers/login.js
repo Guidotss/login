@@ -1,7 +1,6 @@
 import { Router } from "express";
 import path from 'path'
 import passport from 'passport';
-import { isAuth } from "../middlewares/isAuth";
 
 const router = Router(); 
 
