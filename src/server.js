@@ -9,6 +9,7 @@ import routePrincipal from './routers/home';
 import routesRegistro from './routers/signUp';
 import routesLogin from './routers/login'; 
 import './passport/local'; 
+import './passport/facebook';
 import './dataBase/dataBase'; 
 
 
