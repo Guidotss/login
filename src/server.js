@@ -3,10 +3,14 @@ import morgan from 'morgan';
 import session from 'express-session';
 import dotenv from 'dotenv'; 
 import MongoStore from 'connect-mongo';
+import passport from 'passport';
 import DB_CONFIG from './dataBase/config/config'; 
 import routePrincipal from './routers/principal'; 
 import routesRegistro from './routers/registro';
 import routesLogin from './routers/login'; 
+import './passport/local'; 
+import './dataBase/dataBase'; 
+
 
 dotenv.config(); 
 
@@ -25,7 +29,8 @@ app.use(session({
     resave:false,
     saveUninitialized:false
 })); 
-
+app.use(passport.session()) 
+app.use(passport.initialize());
 
 app.use('/',routePrincipal);
 app.use('/registro',routesRegistro); 
