@@ -4,8 +4,9 @@ import session from 'express-session';
 import dotenv from 'dotenv'; 
 import MongoStore from 'connect-mongo';
 import DB_CONFIG from './dataBase/config/config'; 
+import routePrincipal from './routers/principal'; 
 import routesRegistro from './routers/registro';
-import routePrincipal from './routers/principal' ; 
+import routesLogin from './routers/login'; 
 
 dotenv.config(); 
 
@@ -28,6 +29,7 @@ app.use(session({
 
 app.use('/',routePrincipal);
 app.use('/registro',routesRegistro); 
+app.use('/login',routesLogin); 
 
 
 const PORT = process.env.PORT;
