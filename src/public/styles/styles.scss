@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: beige;
 }
@@ -70,6 +71,7 @@ li:hover{
 }
 .login{
     .card{
+        width: 40%;
         margin-top: 120px;
         padding: 0;
         .card-body{
@@ -86,4 +88,30 @@ li:hover{
             }
         }
     }
+    .logos{
+        width: 94%;   
+        ul{
+            margin: auto;
+        }
+    }
+}
+.separador{ 
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+}
+.separador::after,.separador::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: #22223b;
+    top: 0.75em;
+}
+.separador::before{
+    left: -130px;
+}
+.separador::after{
+    right: -130px;
 }
