@@ -13,9 +13,9 @@
         <div  class="card">
             <div class="card-body">
                 <h2 class="card-title">Log In</h2>
-                <form action="/login" method="post">
-                    <input type="text" name="nombre" placeholder="nombre..." class="form-control">
-                    <input type="email" name="email" placeholder="email..." class="form-control">
+                <form action="/login" method="post" id="loginForm">
+                    <input type="text" name="nombre" placeholder="nombre..." class="form-control" id="nombre">
+                    <input type="email" name="email" placeholder="email..." class="form-control" id="email">
                     <input type="password" name="password" placeholder="password.." class="form-control">
                     <button class="btn btn-secondary">Log In</button>
                 </form>
@@ -36,6 +36,9 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div>
+                <p>Todavia no tenes cuenta? <a href="/registro">click aqui</a> para crear una</p>
             </div>
     </div>
 </body>
