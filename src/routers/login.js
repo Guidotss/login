@@ -39,5 +39,12 @@ router.get('/auth2/twitter',passport.authenticate('twitter',{
     successRedirect:'http://localhost:8080'
 })); 
 
+router.get('/auth3',passport.authenticate('github'));
+
+router.get('/auth3/github',passport.authenticate('github',{
+    failureRedirect:'/login/errorLogin',
+    successRedirect:'http://localhost:8080'
+})); 
+
 
 export default router; 

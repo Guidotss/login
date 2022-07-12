@@ -6,7 +6,8 @@ const userSchema = new mongoose.Schema({
     email:{type:String},
     password:{type:String},
     facebookId:{type:String},
-    twitterId:{type:String}
+    twitterId:{type:String},
+    githubId:{type:String}
 }); 
 
 userSchema.methods.encryptPassword = (password) => {

@@ -11,6 +11,7 @@ import routesLogin from './routers/login';
 import './passport/local'; 
 import './passport/facebook';
 import './passport/twitter';
+import  './passport/github';
 import './dataBase/dataBase'; 
 
 
