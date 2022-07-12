@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: beige;
+    background-color: #14213d;
 }
 
 header{
@@ -36,7 +36,9 @@ header{
     }
 }
 
-
+#usuario{
+    color:#f2e9e4;
+}
 
 
 .card{
@@ -44,8 +46,8 @@ header{
     width: 60%;
     margin: auto;
     margin-top: 160px;
-    box-shadow:10px 10px 10px 10px grey;
-    background-color: beige;
+     box-shadow:6px 6px 6px 6px black; 
+    background-color: #ffcdb2;
     padding: 50px;
 
     .card-body{
@@ -83,10 +85,33 @@ header{
         }
     }
     .logos{
-        width: 94%;   
         ul{
-            margin: auto;
+            button{
+                margin-left: -25px;
+                margin-top: -25px;
+                border-radius: 10px;   
+                width: 280px;
+                height: 50px;
+                background-color: #22223b;
+                border: none;
+                .facebook{
+                    width: 70%;
+                    padding: 14px;
+                    position: relative;
+                    top: -40px;
+                }
+                img{
+                    padding: 10px;
+                    position: relative;
+                    top: -38px;
+                }
+            }
+            button:hover{
+                box-shadow: 0px 0px 0px 2px #c77dff;
+                transition: 0.5s;
+            }
         }
+
     }
 }
 .separador{ 
@@ -94,6 +119,7 @@ header{
     position: relative;
     margin-top: 10px;
     text-align: center;
+    margin-bottom: 25px;
 }
 .separador::after,.separador::before{
     content: '';
